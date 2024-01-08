@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.3.1
 ###############################################################################
 # Get prebuild containers from Vaultwarden
 ###############################################################################
@@ -28,6 +28,7 @@ RUN \
         sqlite3=3.40.1-2 \
         fail2ban=1.0.2-2 \
         iproute2=6.1.0-3 \
+        argon2 \
     && apt-get clean \
     && rm /etc/fail2ban/jail.d/defaults-debian.conf \
     && rm /etc/fail2ban/fail2ban.conf

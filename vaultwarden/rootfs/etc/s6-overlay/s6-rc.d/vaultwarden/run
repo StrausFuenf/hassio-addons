@@ -5,6 +5,7 @@
 # Runs the Vaultwarden server
 # ==============================================================================
 declare admin_token
+declare admin_token_argon2
 declare log_level
 declare request_size_limit
 declare secret_key
@@ -54,7 +55,8 @@ export LOG_FILE=/data/vaultwarden.log
 # Show admin token in the log, if config does not exist.
 if ! bashio::fs.file_exists '/data/config.json'; then
     admin_token=$(openssl rand -base64 48)
-    export ADMIN_TOKEN="${admin_token}"
+    admin_token_argon2=$(echo -n "$admin_token" | argon2 "$(openssl rand -base64 32)" -e -id -k 19456 -t 2 -p 1)
+    export ADMIN_TOKEN="${admin_token_argon2}"
 
     bashio::log.info
     bashio::log.info
@@ -63,6 +65,7 @@ if ! bashio::fs.file_exists '/data/config.json'; then
     bashio::log.info
     bashio::log.info "This is your temporary random admin token/password!"
     bashio::log.info
+    #bashio::log.info "Debug only $admin_token_argon2"
     bashio::log.info "${admin_token}"
     bashio::log.info
     bashio::log.info "Be sure to change it in the admin panel, as soon as possible."

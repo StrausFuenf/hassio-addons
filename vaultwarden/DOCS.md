@@ -85,6 +85,8 @@ you are troubleshooting.
 
 Enable or Disable fail2ban for more security. Set it `true` to enable it, `false` otherwise.
 
+**Note**: _If you run Vaultwarden behind a cloudflare proxy this cfuser and cf_token!_
+
 ### Option: `push_enabled`
 
 Enable or Disable Vaultwarden mobile push. Set it `true` to enable it, `false` otherwise.
@@ -95,13 +97,25 @@ Enable or Disable Vaultwarden mobile push. Set it `true` to enable it, `false` o
 
 The Bitwarden Push ID create one on: https://bitwarden.com/host/
 
-**Note**: _Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
+**Note**: _Currently Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
 
 ### Option: `push_key`
 
 The Bitwarden Push ID create one on: https://bitwarden.com/host/
 
-**Note**: _Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
+**Note**: _Currently Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
+
+### Option: `cfuser`
+
+The Cloudflare User
+
+**Note**: _Needed if you run Vaultwarden behind the cloudflare proxy_
+
+### Option: `cf_token`
+
+The Cloudflare API Token
+
+**Note**: _Needed if you run Vaultwarden behind the cloudflare proxy_
 
 ## Known issues and limitations
 
@@ -122,7 +136,7 @@ The original setup of this repository is by [StrausFuenf][strausfuenf].
 
 MIT License
 
-Copyright (c) 2019-2023 Franck Nijhof
+Copyright (c) 2019-2024 Franck Nijhof/StrausFuenf
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
