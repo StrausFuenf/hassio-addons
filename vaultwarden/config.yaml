@@ -7,7 +7,6 @@ url: https://github.com/StrausFuenf/hassio-addons/tree/main/vaultwarden
 codenotary: admin@strausfuenf.de
 webui: "[PROTO:ssl]://[HOST]:[PORT:7277]"
 init: false
-apparmor: true
 arch:
   - aarch64
   - amd64
