@@ -6,7 +6,6 @@ description: Open source password management solution
 url: https://github.com/StrausFuenf/hassio-addons/tree/main/vaultwarden
 codenotary: admin@strausfuenf.de
 ingress: true
-ingress_port: 8099
 init: false
 arch:
   - aarch64
