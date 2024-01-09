@@ -4,7 +4,8 @@
 
 ## Version 1.9
 
-- Added Ingress support (You can now open Bitwarden directly in Homeassistant) this is still in testing so bugs are possible
+- Added Ingress (You can now open Bitwarden directly in Homeassistant) this is still in testing so bugs are possible
+- To not lock you out with Fail2Ban needs X-Forwarded-For inside the Vaultwarden Admin Panel
 
 ## Version 1.8.5.2
 
