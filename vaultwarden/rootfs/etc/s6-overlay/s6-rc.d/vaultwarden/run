@@ -55,7 +55,7 @@ export LOG_FILE=/data/vaultwarden.log
 # Show admin token in the log, if config does not exist.
 if ! bashio::fs.file_exists '/data/config.json'; then
     admin_token=$(openssl rand -base64 48)
-    admin_token_argon2=$(echo -n "$admin_token" | argon2 "$(openssl rand -base64 32)" -e -id -k 19456 -t 2 -p 1)
+    admin_token_argon2=$(echo -n "$admin_token" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4)
     export ADMIN_TOKEN="${admin_token_argon2}"
 
     bashio::log.info
