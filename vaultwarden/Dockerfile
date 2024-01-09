@@ -33,8 +33,8 @@ RUN \
     && apt-get clean \
     && rm /etc/fail2ban/jail.d/defaults-debian.conf \
     && rm /etc/fail2ban/fail2ban.conf \
-    && rm /etc/nginx/sites-enabled/default
-
+    && rm /etc/nginx/sites-enabled/default \
+    && rm -f /etc/nginx/nginx.conf
 # Copy root filesystem
 COPY rootfs /
 
