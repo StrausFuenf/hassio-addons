@@ -28,10 +28,12 @@ RUN \
         sqlite3=3.40.1-2 \
         fail2ban=1.0.2-2 \
         iproute2=6.1.0-3 \
-        argon2 \
+        argon2=0~20171227-0.3+deb12u1 \
+        nginx=1.22.1-9 \
     && apt-get clean \
     && rm /etc/fail2ban/jail.d/defaults-debian.conf \
-    && rm /etc/fail2ban/fail2ban.conf
+    && rm /etc/fail2ban/fail2ban.conf \
+    && rm /etc/nginx/sites-enabled/default
 
 # Copy root filesystem
 COPY rootfs /
@@ -39,7 +41,7 @@ COPY rootfs /
 #!/bin/bash
 
 RUN chmod u+rwx /etc/s6-overlay/s6-rc.d/fail2ban/run
-
+RUN chmod u+rwx /etc/s6-overlay/s6-rc.d/nginx/run
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
