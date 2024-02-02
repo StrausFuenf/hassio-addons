@@ -12,6 +12,6 @@
 
 ## Dependency updates
 
-## Version 1.8.5.2
+## Version 0.2.0
 
 - Update Vaultwarden to Version 1.30.3
