@@ -2,7 +2,7 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.3.1
 ###############################################################################
 # Get prebuild containers from Vaultwarden
 ###############################################################################
-FROM "vaultwarden/server:1.30.1" as vaultwarden
+FROM "vaultwarden/server:1.30.3" as vaultwarden
 
 ###############################################################################
 # Build the actual add-on.
@@ -40,8 +40,8 @@ COPY rootfs /
 
 #!/bin/bash
 
-RUN chmod u+rwx /etc/s6-overlay/s6-rc.d/fail2ban/run
-RUN chmod u+rwx /etc/s6-overlay/s6-rc.d/nginx/run
+RUN chmod u+rwx  /etc/s6-overlay/s6-rc.d/fail2ban/run
+RUN chmod u+rwx  /etc/s6-overlay/s6-rc.d/nginx/run
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE

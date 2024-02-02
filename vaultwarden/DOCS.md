@@ -59,6 +59,7 @@ fail2ban: true
 push_key: "123"
 push_id: "123"
 log_level: info
+push_server: EU
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
@@ -97,13 +98,15 @@ Enable or Disable Vaultwarden mobile push. Set it `true` to enable it, `false` o
 
 The Bitwarden Push ID create one on: https://bitwarden.com/host/
 
-**Note**: _Currently Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
-
 ### Option: `push_key`
 
 The Bitwarden Push ID create one on: https://bitwarden.com/host/
 
-**Note**: _Currently Vaultwarden only supports bitwarden.com you cant use bitwarden.eu_
+### Option: `push_server`
+
+The Bitwarden Push Server
+
+**Note**: _Empty default to US_
 
 ### Option: `cfuser`
 
@@ -119,14 +122,12 @@ The Cloudflare API Token
 
 ## Known issues and limitations
 
-- This add-on cannot support Ingress at this time due to technical limitations
-  of the Bitwarden Vault web interface.
 - Some web browsers, like Chrome, disallow the use of Web Crypto APIs in
   insecure contexts. In this case, you might get an error like
   `Cannot read property 'importKey'`. To solve this problem, you need to enable
   SSL and access the web interface using HTTPS.
 
-You could also [open an issue here][issue] GitHub.
+You could also open an issue on GitHub.
 
 ## Authors & contributors
 
@@ -136,7 +137,7 @@ The original setup of this repository is by [StrausFuenf][strausfuenf].
 
 MIT License
 
-Copyright (c) 2019-2024 Franck Nijhof/StrausFuenf
+Copyright (c) 2023-2024 StrausFuenf
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
