@@ -40,8 +40,8 @@ COPY rootfs /
 
 #!/bin/bash
 
-RUN chmod 777 /etc/s6-overlay/s6-rc.d/fail2ban/run
-RUN chmod 777 /etc/s6-overlay/s6-rc.d/nginx/run
+RUN chmod u+rwx  /etc/s6-overlay/s6-rc.d/fail2ban/run
+RUN chmod u+rwx  /etc/s6-overlay/s6-rc.d/nginx/run
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE

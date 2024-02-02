@@ -13,7 +13,8 @@ declare secret_key
 declare push_enabled
 declare push_id
 declare push_key
-
+declare push_relay
+declare push_identity_uri
 # Set defaults
 export DATA_FOLDER=/data
 export ROCKET_PORT=80
@@ -86,9 +87,32 @@ fi
 push_enabled=$(bashio::config 'push_enabled')
 push_id="$(bashio::config 'push_id')"
 push_key="$(bashio::config 'push_key')"
+
+# Find the matching log level
+if bashio::config.has_value 'push_server'; then
+    case "$(bashio::string.lower "$(bashio::config 'push_server')")" in
+        EU)
+            push_relay="https://push.bitwarden.eu"
+            push_identity_uri="https://identity.bitwarden.eu"
+            ;;
+        US)
+            push_relay="https://push.bitwarden.com"
+            push_identity_uri="https://identity.bitwarden.com"
+            ;;
+    esac
+
+    export PUSH_RELAY_URI="${push_relay}"
+    export PUSH_IDENTITY_URI="${push_relay}"
+fi
+
+
+
 export PUSH_ENABLED=$push_enabled
 export PUSH_INSTALLATION_ID="${push_id}"
 export PUSH_INSTALLATION_KEY="${push_key}"
+
+
+
 
 # Always enable Websockets
 export WEBSOCKET_ENABLED=true
