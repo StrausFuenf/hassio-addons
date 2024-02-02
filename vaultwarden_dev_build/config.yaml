@@ -1,5 +1,5 @@
 ---
-name: Vaultwarden (Bitwarden)
+name: Vaultwarden (Bitwarden) DEV
 version: "dev.0.1"
 slug: vaultwarden-dev
 description: Open source password management solution
