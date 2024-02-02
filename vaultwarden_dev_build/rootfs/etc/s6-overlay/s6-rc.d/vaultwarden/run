@@ -91,11 +91,11 @@ push_key="$(bashio::config 'push_key')"
 # Find the matching log level
 if bashio::config.has_value 'push_server'; then
     case "$(bashio::string.lower "$(bashio::config 'push_server')")" in
-        EU)
+        eu)
             push_relay="https://push.bitwarden.eu"
             push_identity_uri="https://identity.bitwarden.eu"
             ;;
-        US)
+        us)
             push_relay="https://push.bitwarden.com"
             push_identity_uri="https://identity.bitwarden.com"
             ;;
