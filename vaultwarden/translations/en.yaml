@@ -16,6 +16,10 @@ configuration:
     name: Push Notifications
     description: >-
       Enables/Disables Push Notifications.
+  push_server:
+     name: Push Notification Relay
+    description: >-
+      Sets the Push Notification Server -> Empty Value defaults to US.    
   fail2ban:
     name: Fail2Ban
     description: >-
