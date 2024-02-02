@@ -1,0 +1,32 @@
+---
+configuration:
+  log_level:
+    name: Log level
+    description: >-
+      Controls the level of log details the add-on provides.
+  push_key:
+    name: Bitwarden Push Key
+    description: >-
+      Bitwarden Push Key (https://bitwarden.com/host/)
+  push_id:
+    name: Bitwarden Push ID
+    description: >-
+      Bitwarden Push ID (https://bitwarden.com/host/)
+  push_enabled:
+    name: Push Notifications
+    description: >-
+      Enables/Disables Push Notifications.
+  fail2ban:
+    name: Fail2Ban
+    description: >-
+      Enables/Disables Fail2Ban.
+  cfuser:
+    name: Cloudflare User
+    description: >-
+      Cloudflare Login User.
+  cf_token:
+    name: Cloudflare API Token
+    description: >-
+      Cloudflare API Token.
+network:
+  80/tcp: Web interface

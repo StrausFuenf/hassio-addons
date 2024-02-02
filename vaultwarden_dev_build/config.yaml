@@ -1,0 +1,31 @@
+---
+name: Vaultwarden (Bitwarden)
+version: "0.1.9"
+slug: vaultwarden
+description: Open source password management solution
+url: https://github.com/StrausFuenf/hassio-addons/tree/main/vaultwarden
+codenotary: admin@strausfuenf.de
+ingress: true
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armv7
+image: "ghcr.io/strausfuenf/vaultwarden-{arch}"  
+ports:
+  80/tcp: 7277
+ports_description:
+  80/tcp: Vaultwarden Web interface
+privileged:
+  - NET_ADMIN
+  - NET_RAW
+options:
+  fail2ban: false  
+schema:
+  cf_token: str?
+  cfuser: str?
+  fail2ban: bool
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  push_key: str?
+  push_id: str?
+  push_enabled: bool?
