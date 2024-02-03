@@ -1,5 +1,9 @@
 ## What’s changed
 
+## Version 0.2.1
+
+- Small fix to make the Vars use the PUSH_IDENTITY_URI
+
 ## Enhancements
 
 ## Version 0.2.0
