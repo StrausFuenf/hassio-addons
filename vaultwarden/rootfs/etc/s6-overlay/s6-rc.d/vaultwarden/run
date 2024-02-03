@@ -88,7 +88,7 @@ push_enabled=$(bashio::config 'push_enabled')
 push_id="$(bashio::config 'push_id')"
 push_key="$(bashio::config 'push_key')"
 
-# Find the matching log level
+# Check if there is a config for the Push Server 
 if bashio::config.has_value 'push_server'; then
     case "$(bashio::string.lower "$(bashio::config 'push_server')")" in
         eu)
@@ -102,7 +102,7 @@ if bashio::config.has_value 'push_server'; then
     esac
 
     export PUSH_RELAY_URI="${push_relay}"
-    export PUSH_IDENTITY_URI="${push_relay}"
+    export PUSH_IDENTITY_URI="${push_identity_uri}"
 fi
 
 
