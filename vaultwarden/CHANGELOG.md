@@ -12,10 +12,6 @@
 
 ## Maintenance
 
--
-
-## Dependency updates
-
 ## Version 0.2.2
 
 - Updated Vaultwarden to Version 1.30.4
@@ -23,3 +19,7 @@
 ## Version 0.2.0
 
 - Updated Vaultwarden to Version 1.30.3
+
+## Dependency updates
+
+- Updated Versions
