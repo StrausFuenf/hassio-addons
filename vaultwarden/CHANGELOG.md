@@ -12,6 +12,10 @@
 
 ## Maintenance
 
+## Version 0.2.3
+
+- Updated Vaultwarden to Version 1.30.5
+
 ## Version 0.2.2
 
 - Updated Vaultwarden to Version 1.30.4
