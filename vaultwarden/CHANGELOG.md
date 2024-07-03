@@ -1,6 +1,6 @@
 ## What’s changed
 
-## Version 0.2.3
+## Version 0.2.4
 
 - EU Push Bugfix
 
@@ -12,7 +12,7 @@
 
 ## Maintenance
 
-## Version 0.2.3
+## Version 0.2.4
 
 - Changed the EU Push Relay to api.bitwarden.eu (https://github.com/dani-garcia/vaultwarden/issues/4609)
 
