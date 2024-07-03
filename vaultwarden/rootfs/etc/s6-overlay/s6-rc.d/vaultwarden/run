@@ -92,7 +92,7 @@ push_key="$(bashio::config 'push_key')"
 if bashio::config.has_value 'push_server'; then
     case "$(bashio::string.lower "$(bashio::config 'push_server')")" in
         eu)
-            push_relay="https://push.bitwarden.eu"
+            push_relay="https://api.bitwarden.eu"
             push_identity_uri="https://identity.bitwarden.eu"
             ;;
         us)
