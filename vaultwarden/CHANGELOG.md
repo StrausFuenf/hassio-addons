@@ -1,5 +1,9 @@
 ## What’s changed
 
+## Version 0.3.0
+
+- Vaultwarden Updated to 1.31.0
+
 ## Version 0.2.4
 
 - EU Push Bugfix
