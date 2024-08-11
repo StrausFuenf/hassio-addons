@@ -1,5 +1,10 @@
 ## What’s changed
 
+## Version 0.3.1
+
+- Vaultwarden Updated to 1.32.0
+  this version has a major security      fixes updates asap
+
 ## Version 0.3.0
 
 - Vaultwarden Updated to 1.31.0
