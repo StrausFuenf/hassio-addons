@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.3.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base:7.4.0
 ###############################################################################
 # Get prebuild containers from Vaultwarden
 ###############################################################################
@@ -24,12 +24,12 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         libmariadb-dev-compat=1:10.11.6-0+deb12u1 \
-        libpq5=15.6-0+deb12u1 \
+        libpq5=15.7-0+deb12u1 \
+        nginx=1.22.1-9 \
         sqlite3=3.40.1-2 \
         fail2ban=1.0.2-2 \
         iproute2=6.1.0-3 \
         argon2=0~20171227-0.3+deb12u1 \
-        nginx=1.22.1-9 \
     && apt-get clean \
     && rm /etc/fail2ban/jail.d/defaults-debian.conf \
     && rm /etc/fail2ban/fail2ban.conf \
