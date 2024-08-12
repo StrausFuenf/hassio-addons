@@ -16,7 +16,7 @@ This repository contains the following add-ons
 
 Open source password management solution
 
-### [Vaultwarden-dev](./vaultwarden_dev_build)
+<!--### [Vaultwarden-dev](./vaultwarden_dev_build)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -26,7 +26,8 @@ Open source password management solution
 
 Open source password management solution
 
-Testing Addon with new functions
+#Testing Addon with new functions
+ -->
 <!--
 
 Notes to developers after forking or using the github template feature:
