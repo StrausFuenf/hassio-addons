@@ -1,9 +1,0 @@
-#!/command/with-contenv bashio
-# shellcheck shell=bash
-# ==============================================================================
-# Home Assistant Community Add-on: Vaultwarden
-# Runs the nginx daemon
-# ==============================================================================
-bashio::net.wait_for 30
-bashio::log.info "Starting nginx..."
-exec nginx
