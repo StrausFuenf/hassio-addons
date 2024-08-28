@@ -2,6 +2,10 @@
 
 This Addon adds Push notification support and Fail2ban for more security
 
+##Bug Reporting
+
+Found a bug , want to join a Discussion or add something to the addon? You can do this on Github: [straus_addon]
+
 ## Vaultwarden
 
 Bitwarden is an open-source password manager that can store sensitive
@@ -163,4 +167,5 @@ SOFTWARE.
 [frenck]: https://github.com/frenck
 [vaultwarden]: https://github.com/dani-garcia/vaultwarden
 [community-addon]: https://github.com/hassio-addons/repository/tree/master/bitwarden
-[strausfuenf]: https://github.com/strausfuenf
+[straus_addon]: https://github.com/StrausFuenf/hassio-addons/tree/main/vaultwarden
+[strausfuenf]: https://github.com/strausfuenf/
