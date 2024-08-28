@@ -1,8 +1,4 @@
-# Home Assistant Community Add-on: Vaultwarden (Bitwarden)
-
-This is forked from the original Vaultwarden [community-addon]
-
-Credit goes to [frenck]
+# Home Assistant Add-on: Vaultwarden (Bitwarden)
 
 This Addon adds Push notification support and Fail2ban for more security
 
@@ -133,6 +129,11 @@ You could also open an issue on GitHub.
 
 The original setup of this repository is by [StrausFuenf][strausfuenf].
 
+## Fork
+This is forked from the original Vaultwarden [community-addon]
+
+Credit goes to [frenck]
+
 ## License
 
 MIT License
@@ -158,7 +159,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [addon-badge]: https://my.home-assistant.io/badges/supervisor_addon.svg
-[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_bitwarden&repository_url=https%3A%2F%2Fgithub.com%2Fhassio-addons%2Frepository
+[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=aa433fa6_vaultwarden&repository_url=https://github.com/StrausFuenf/hassio-addons
 [frenck]: https://github.com/frenck
 [vaultwarden]: https://github.com/dani-garcia/vaultwarden
 [community-addon]: https://github.com/hassio-addons/repository/tree/master/bitwarden
