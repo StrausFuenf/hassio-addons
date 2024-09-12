@@ -1,38 +1,13 @@
 ## What’s changed
 
-## Version 0.3.1
-
-- Vaultwarden Updated to 1.32.0
-  this version has a major security      fixes updates asap
-
-## Version 0.3.0
-
-- Vaultwarden Updated to 1.31.0
-
-## Version 0.2.4
-
-- EU Push Bugfix
-
-## Enhancements
-
-## Version 0.2.0
-
-- Added the Push Server to the config
-
 ## Maintenance
 
-## Version 0.2.4
+## Version 0.3.2
 
-- Changed the EU Push Relay to api.bitwarden.eu (https://github.com/dani-garcia/vaultwarden/issues/4609)
-
-## Version 0.2.3
-
-- Updated Vaultwarden to Version 1.30.5
-
-## Version 0.2.2
-
-- Updated Vaultwarden to Version 1.30.4
+- Updated Docker Base Image 
 
 ## Dependency updates
 
-- Updated Versions
+## Version 0.3.2
+
+- Updated Docker Base Image 
