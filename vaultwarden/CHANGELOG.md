@@ -10,4 +10,5 @@
 
 ## Version 0.3.2
 
-- Updated Docker Base Image 
+- Updated Docker Base Image
+- Updated libpq5 version
