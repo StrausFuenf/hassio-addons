@@ -2,13 +2,8 @@
 
 ## Maintenance
 
-## Version 0.3.2
+## Version 0.3.3
 
-- Updated Docker Base Image 
+- Updated Vaultwarden to 1.32.1
 
 ## Dependency updates
-
-## Version 0.3.2
-
-- Updated Docker Base Image
-- Updated libpq5 version
