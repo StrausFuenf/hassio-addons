@@ -2,10 +2,12 @@
 
 ## Maintenance
 
-## Version 0.3.5
+## Version 0.3.6
 
-- Updated Vaultwarden to 1.32.3
+- Updated Vaultwarden to 1.32.4
 
 ## Dependency updates
+
+- Docker tag to v7.5
 
 
