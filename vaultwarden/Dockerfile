@@ -26,7 +26,7 @@ RUN \
         libmariadb-dev-compat=1:10.11.6-0+deb12u1 \
         libpq5=15.8-0+deb12u1 \
         nginx=1.22.1-9 \
-        sqlite3=3.40.1-2 \
+        sqlite3=3.40.1-2+deb12u1 \
         fail2ban=1.0.2-2 \
         iproute2=6.1.0-3 \
         argon2=0~20171227-0.3+deb12u1 \
