@@ -2,12 +2,12 @@
 
 ## Maintenance
 
-## Version 0.3.7
+## Version 0.3.8
 
-- Updated Vaultwarden to 1.32.5 (Security Fix)
+- ⬆️ Update vaultwarden to v1.32.6
 
 ## Dependency updates
 
-- Docker tag to v7.6
+- ⬆️ Update debian-base to v7.6.2 
 
 
