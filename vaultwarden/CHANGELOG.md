@@ -2,11 +2,15 @@
 
 ## Maintenance
 
-## Version 0.3.9
+## Version 0.4
 
-- ⬆️ Update vaultwarden to v1.32.7 (Update ASAP Security Fix)
+- ⬆️ Update vaultwarden to v1.33 (Update ASAP Security Fix)
 
 ## Dependency updates
+
+## Version 0.4
+
+- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v7.7.0
 
 
 
