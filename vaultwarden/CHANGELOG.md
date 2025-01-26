@@ -8,5 +8,9 @@
 
 ## Dependency updates
 
+## Version 0.4
+
+- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v7.7.0
+
 
 
