@@ -2,9 +2,9 @@
 
 ## Maintenance
 
-## Version 0.4
+## Version 0.4.1
 
-- ⬆️ Update vaultwarden to v1.33 (Update ASAP Security Fix)
+- ⬆️ Update vaultwarden to v1.33.2 (Update ASAP Security Fix)
 
 ## Dependency updates
 
