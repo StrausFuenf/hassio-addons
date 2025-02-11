@@ -32,5 +32,9 @@ configuration:
     name: Cloudflare API Token
     description: >-
       Cloudflare API Token.
+  ssh_keys:
+    name: SSH Key Option
+    description: >-
+      Enable or Disable the SSH Agent and Storing of SSH Keys.      
 network:
   80/tcp: Web interface
