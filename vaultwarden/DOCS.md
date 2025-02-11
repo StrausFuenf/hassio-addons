@@ -60,6 +60,7 @@ push_key: "123"
 push_id: "123"
 log_level: info
 push_server: EU
+ssh_keys: true
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
@@ -119,6 +120,12 @@ The Cloudflare User
 The Cloudflare API Token
 
 **Note**: _Needed if you run Vaultwarden behind the cloudflare proxy_
+
+### Option: `ssh_keys`
+
+Enables the SSH Keys Agent and also allows storing of SSH Keys
+
+**Note**: _Needs some adjustments on your host if you want to use it_
 
 ## Known issues and limitations
 
