@@ -2,15 +2,12 @@
 
 ## Maintenance
 
-## Version 0.4.1
+## Version 0.4.2
 
-- ⬆️ Update vaultwarden to v1.33.2 (Update ASAP Security Fix)
+- Added SSH Key Support
 
 ## Dependency updates
 
-## Version 0.4
-
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v7.7.0
 
 
 
