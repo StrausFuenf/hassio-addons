@@ -30,4 +30,4 @@ schema:
   push_id: str?
   push_enabled: bool?
   push_server: list(EU|US)?
-  SSH_Keys: bool?
+  ssh_keys: bool?
