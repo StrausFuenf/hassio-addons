@@ -116,7 +116,9 @@ export PUSH_INSTALLATION_KEY="${push_key}"
 ssh_keys=$(bashio::config 'ssh_keys')
 #Enable or Disable SSH Agent and Keys
 if [  $ssh_keys ]; then
-export EXPERIMENTAL_CLIENT_FEATURE_FLAGS="ssh-key-vault-item,ssh-agent"
+echo "Enable SSH Features
+ssh_keys_option="ssh-key-vault-item,ssh-agent"
+export EXPERIMENTAL_CLIENT_FEATURE_FLAGS="${ssh_keys_option}
 fi
 
 # Always enable Websockets
