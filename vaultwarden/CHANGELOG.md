@@ -2,12 +2,13 @@
 
 ## Maintenance
 
-## Version 0.4.2
+## Version 0.4.3
 
-- Added SSH Key Support
+- Changed Vaultwarden Image Version to 1.34.1
+- Changed Docker Build to 7.8.3
 
 ## Dependency updates
-
+-Updated to newer versions
 
 
 
