@@ -8,7 +8,7 @@
 - Changed Docker Build to 7.8.3
 
 ## Dependency updates
--Updated to newer versions
+- Updated to newer versions
 
 
 
