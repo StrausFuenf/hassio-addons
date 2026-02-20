@@ -12,6 +12,9 @@
 - Fixed the Logout Bug
 ## Version 0.5.2
 - Changed Vaultwarden Image Version to 1.35.2
+## Version 0.5.3
+- Sorry for the late Security Fix 
+- Changed Vaultwarden Image version to 1.35.3
 ## Dependency updates
 - Updated Docker Tag
 - Updated Debian Base Tag
