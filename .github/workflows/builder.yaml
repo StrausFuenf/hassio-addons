@@ -1,8 +1,14 @@
 name: Build
 
+
 on:
+  push:
+    branches:
+      - main
+
   release:
     types: [published]
+
 
 env:
   ARCHITECTURES: '["amd64", "aarch64"]'
