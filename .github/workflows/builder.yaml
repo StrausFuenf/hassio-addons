@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+
   push:
     branches:
       - main
@@ -18,9 +19,11 @@ jobs:
   init:
     name: Initialize builds
     runs-on: ubuntu-latest
+
     outputs:
       changed: ${{ steps.filter.outputs.changed }}
       changed_apps: ${{ steps.filter.outputs.changed_apps }}
+
     steps:
       - name: Check out the repository
         uses: actions/checkout@v7.0.0
@@ -38,22 +41,32 @@ jobs:
         env:
           APPS: ${{ steps.apps.outputs.addons }}
           CHANGED_FILES: ${{ steps.changed_files.outputs.all_changed_files }}
+
         run: |
           changed_apps=()
 
-          # If the workflow file itself changed, rebuild all apps
-          if [[ "${CHANGED_FILES}" =~ \.github/workflows/(builder|build-app)\.yaml ]]; then
+          echo "Detected apps:"
+          echo "${APPS}"
+
+          echo "Changed files:"
+          echo "${CHANGED_FILES}"
+
+          # If a workflow file changed, rebuild all apps
+          if [[ "${CHANGED_FILES}" == *".github/workflows/"* ]]; then
             changed_apps=(${APPS})
           else
             for app in ${APPS}; do
               for file in ${MONITORED_FILES}; do
-                if [[ "${CHANGED_FILES}" =~ ${app}/${file} ]]; then
+                if [[ "${CHANGED_FILES}" == *"${app}/${file}"* ]]; then
                   changed_apps+=("${app}")
                   break
                 fi
               done
             done
           fi
+
+          echo "Changed apps:"
+          printf '%s\n' "${changed_apps[@]}"
 
           if [[ ${#changed_apps[@]} -gt 0 ]]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -65,17 +78,24 @@ jobs:
   build-app:
     name: Build ${{ matrix.app }}
     needs: init
+
     if: needs.init.outputs.changed == 'true'
+
     permissions:
       contents: read
       id-token: write
       packages: write
+
     strategy:
       fail-fast: false
+
       matrix:
         app: ${{ fromJSON(needs.init.outputs.changed_apps) }}
+
     uses: ./.github/workflows/build-app.yaml
+
     with:
       app: ${{ matrix.app }}
       publish: ${{ github.event_name == 'push' }}
+
     secrets: inherit
