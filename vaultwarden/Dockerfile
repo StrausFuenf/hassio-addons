@@ -1,4 +1,4 @@
-FROM ghcr.io/hassio-addons/debian-base:9.3.0
+
 ###############################################################################
 # Get prebuild containers from Vaultwarden
 ###############################################################################
@@ -9,6 +9,7 @@ FROM vaultwarden/server:1.37.0 as vaultwarden_src
 ###############################################################################
 # hadolint ignore=DL3006
 
+FROM ghcr.io/hassio-addons/debian-base:9.3.0
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
