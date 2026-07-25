@@ -9,7 +9,7 @@ init: false
 arch:
   - aarch64
   - amd64
-image: "ghcr.io/strausfuenf/vaultwardenvaultwarden-{arch}"
+image: "ghcr.io/strausfuenf/vaultwarden-{arch}"
 ports:
   80/tcp: 7277
 ports_description:
