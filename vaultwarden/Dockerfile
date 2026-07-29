@@ -2,7 +2,7 @@
 ###############################################################################
 # Get prebuild containers from Vaultwarden
 ###############################################################################
-FROM vaultwarden/server:1.37.0 as vaultwarden_src
+FROM vaultwarden/server:1.37.1 as vaultwarden_src
 
 ###############################################################################
 # Build the actual add-on.
